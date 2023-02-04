@@ -13,7 +13,6 @@ And then run `npm install` in the terminal.
 Make sure you are in the app folder ;)
 
 ### Run the app in development mode
-
 To display the app in the browser, let's run `npm start`.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
