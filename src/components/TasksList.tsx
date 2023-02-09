@@ -6,7 +6,6 @@ import "./TasksList.css";
 
 type TaskListProps = {
   tasks : TaskType[];
-//   addOrEditTask: (taskId: number) => void; 
   deleteTask: (taskId: number) => void;
   editTask: (taskId: number) => void;
 };

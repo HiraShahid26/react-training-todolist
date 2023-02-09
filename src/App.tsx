@@ -1,10 +1,10 @@
-import React from "react";
+
+import React, {useState} from "react";
 import "./App.css";
 import { Task } from "./components/Task";
 import { TaskFormModal } from "./components/TaskFormModal";
 import { data } from "./data/tasks";
 import { Header } from "./components/Header";
-import  {useState} from "react";
 import {TasksList} from "./components/TasksList"
 import {TaskType} from "./models/Task";
 
@@ -13,9 +13,6 @@ import {TaskType} from "./models/Task";
 const App = () => {
   const title = "To do list";
   const [taskToEdit, setTaskToEdit] = useState <TaskType | null> (null);
-
-  // const tasks = data;
-  // const taskToEdit: any = null;
   const [showModel, setShowModel] = useState(false);
   const [tasks, setTasks] = useState(data);
 
@@ -70,9 +67,7 @@ const App = () => {
     <div className="main">
       <Header title={title} />
       
-      {/* {tasks.map((task) => (
-        <Task task={task} />
-      ))} */}
+     
     <TasksList deleteTask={deleteTask} tasks = {tasks} editTask={editTask}/>  
       <button
         className="add-task-btn"
@@ -101,3 +96,8 @@ const App = () => {
 };
 
 export default App;
+// ###########################################
+
+
+
+
